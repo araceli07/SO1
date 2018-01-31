@@ -1,7 +1,7 @@
 # SO1
-sistemas opretivos 1 
-Araceli Lucero Cardona
-M.S.C Eduardo Flores Gallegos
+- sistemas opretivos 1 
+ - Araceli Lucero Cardona
+ - M.S.C Eduardo Flores Gallegos
  - TEMARIO
 Unidad Temas Subtemas
 1 Introducción a los sistemas
