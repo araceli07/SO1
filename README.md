@@ -3,8 +3,8 @@
  - Araceli Lucero Cardona
  - M.S.C Eduardo Flores Gallegos
  - TEMARIO
-Unidad - Temas -- Subtemas
--1 Introducción a los sistemas
+Unidad - Temas - Subtemas
+- 1 Introducción a los sistemas
 operativos.
 -1.1 Definición y concepto.
 -1.2 Funciones y características.
