@@ -114,3 +114,7 @@ de falla.
  - ¿que diferencia hay entre memoria logica y fisica? ps que la logica almacenda datos en la nube y la fisca los almacena en fisco.
  - ¿que tipo de sistema de archivos conoce?
  - ¿que es la criptografia? es donde se guardan los datos y no es falcil de recuperarlos.
+ _____________________________________________________________________________________________
+ ##glosario
+ - RDIM:registro de direccion de memoria 
+  - RDAM: registro de datos de memoria
