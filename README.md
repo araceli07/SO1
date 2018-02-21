@@ -117,4 +117,6 @@ de falla.
  _____________________________________________________________________________________________
  ##glosario
  - RDIM:registro de direccion de memoria 
-  - RDAM: registro de datos de memoria
+  - RDAM: registro de datos
+  __________________________________________________________________________________________________________
+   - guia de examen: sacamos 10 preguntas del libro fundamentos de sistemas operativo para hacer nuestra primera evalucion
