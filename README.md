@@ -120,3 +120,8 @@ de falla.
   - RDAM: registro de datos
   __________________________________________________________________________________________________________
    - guia de examen: sacamos 10 preguntas del libro fundamentos de sistemas operativo para hacer nuestra primera evalucion
+   _______________________________________________________________________________________________________________________________________
+    - realizar tres programas en c:
+     - programar un hola mundo donde lo imprima
+     - una calculadora en c funciones basicas
+     - un array onde nos va sumando los numero del menor al mayor
