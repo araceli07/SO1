@@ -127,7 +127,7 @@ de falla.
      - un array onde nos va sumando los numero del menor al mayor
 ________________________________________________________________________________________________________________________________
  - conceptos:
- -carga: Es una parte que asigna el sistema operativo el cual ubica en la memoria principal el tipo de archivos que se va a ejecutar se puede realizar de tres maneras.
+ - carga: Es una parte que asigna el sistema operativo el cual ubica en la memoria principal el tipo de archivos que se va a ejecutar se puede realizar de tres maneras.
  -carga absoluta: este tipo de carga consiste en que el módulo de carga ocupara siempre la misma posición en memoria principal.
  -carga real en tiempo real dinamica: en tiempo real un programa se carga en cualquier región de la memoria principal, el programa se puede intercambiar entre disco y memoria.
  -carga reubicable: el ensamblador o el compilador no generan direcciones reales sino directas relativas a algún punto conocido.
