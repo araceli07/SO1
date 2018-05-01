@@ -231,6 +231,21 @@ ________________________________________________________________________________
  - unidad 4
   - Asignación de fichero
  - Asignación de fichero indexado:
-  - También conocido como asignación por "I-Nodes" (nodos indexados), este método lleva el rastro de que bloque pertenece a cada archivo, asignando un I-node con todos los punteros hacia los demás bloques en el orden correspondiente, para cada archivo existe un I-node. El I-node lista los atributos y las direcciones de bloques del archivo asociado, por lo que dado su I-nodo, es posible encontrar todos los bloques de un Archivo. Existe perdida de espacio ya que cada archivo necesitar un I-nodo independiente de cuantos datos contenga el bloque. El rendimiento depende del archivo si se accede de manera secuencial o aleatoria, o si el archivo es muy grande o muy pequeño.
+También conocido como asignación por "I-Nodes" (nodos indexados), este método lleva el rastro de que bloque pertenece a cada archivo, asignando un I-node con todos los punteros hacia los demás bloques en el orden correspondiente, para cada archivo existe un I-node. El I-node lista los atributos y las direcciones de bloques del archivo asociado, por lo que dado su I-nodo, es posible encontrar todos los bloques de un Archivo. Existe perdida de espacio ya que cada archivo necesitar un I-nodo independiente de cuantos datos contenga el bloque. El rendimiento depende del archivo si se accede de manera secuencial o aleatoria, o si el archivo es muy grande o muy pequeño.
+ -  Asignación Contigua:
+Como el nombre lo dice, los bloques que pertenecen a un mismo archivo se ubican de manera contigua. lo que es particularmente útil en el caso de los discos mecánicos ya que no es necesario realizar grandes movimientos en el cabezal para leer el archivo. También reduce las búsquedas en el disco, ya que se sabe que están en cierto espacio contiguo y no es necesario explorar todo para llegar a la información deseada. Cada directorio contiene, para cada archivo, la dirección del bloque en que comienza y la longitud del área asignada a este archivo.
+ - Asignación Enlazada:
+Cada archivo es una lista ligada de bloques de disco, en cada bloque existe un puntero que direciona hacia el bloque siguiente, el resto del bloque es usado para almacenar datos, de esta forma, todos los bloques del disco pueden ser usados.
+ - Base de Datos: es un conjunto de información relacionada que se encuentra agrupada o estructurada. Un archivo por sí mismo no constituye una base de datos, sino más bien la forma en que está organizada la información es la que da origen a la base de datos.
+ - Concepto de Bloque:
+En los dispositivos de almacenamiento secundario (discos duros, por ejemplo), la información se agrupa en bloques. Cada archivo está compuesto por 1 o varios bloques, y a su vez cada bloque está ubicado en un número de sectores. 
+ - Campo clave:
+En cualquier base de datos los registros incluidos en sus diferentes tablas deben estar perfectamente identificados y de esto se encargan las claves o llaves. Trasladando este concepto a la vida real, cada ciudadano tiene un número de DNI, puede haber dos personas con igual nombre e incluso apellidos iguales, pero ambos se diferenciarán por su número de DNI, que es único en "teoría"
+ - Directorio de trabajo actual:
+En cualquier momento, se asume que los órdenes que introduce se refieren a su directorio de trabajo actual. Puede entender directorio de trabajo como el directorio en el que ''se encuentra'' en ese momento. Cuando accede por primera vez al sistema, su directorio de trabajo se configura como su directorio de usuario --/home/larry, en nuestro caso. Cuando haga referencia a un fichero, puede referirse a él en relación a su directorio de trabajo actual, en vez de especificar el nombre de la ruta completa del fichero
+ - ficheros
+  - •	Directo: Los registros binarios no se disponen en el soporte atendiendo a un algoritmo de cálculo.
+ - •Indexado: Los registros generalmente se almacenan secuencialmente y van con un índice.
+
 
  
