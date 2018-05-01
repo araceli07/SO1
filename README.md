@@ -246,6 +246,47 @@ En cualquier momento, se asume que los órdenes que introduce se refieren a su d
  - ficheros
   - •	Directo: Los registros binarios no se disponen en el soporte atendiendo a un algoritmo de cálculo.
  - •Indexado: Los registros generalmente se almacenan secuencialmente y van con un índice.
+ - Fichero secuencial: 
+Los registros se almacenan por posición, cada registro tiene el mismo tamaño y el mismo número de campos. El primero de cada registro de un campo se lee como campo clave, para leer un archivo el sistema comienza al principio del archivo y lee un registro a la vez hasta llegar al registro deseado. 
+Es la forma más común de estructura de archivos.
+Se emplea un formato fijo para los registros, son de la misma longitud y constan del mismo número de campos de tamaño fijo con un orden determinado.
+Se necesita almacenar los valores de cada campo; el nombre del campo y la longitud de cada uno son atributos de la estructura del archivo. Cada registro tiene un campo clave que lo identifica (generalmente es el primero de cada registro). Los registros se almacenan en secuencia por la clave.
+            Se utilizan normalmente en aplicaciones de procesos por lotes, ya que es la única organización de archivos que se puede guardar tanto en cintas como en discos.
+ - Fichero secuencial indexado:
+Posee varias características que el archivo secuencial ya que se organizan en campos. Este método supera las desventajas del otro método. Este tiene un índice del archivo que permite llegar rápidamente a un registro deseado, esto se le llama archivo de desbordamiento, y se ejecuta a través de la dirección de punteros donde están ubicados en los registros deseados.
+ - Método de acceso:
+Es la estructura lógica de cada registro por la cual se acceden a ellos, esto significa que su almacenamiento secundario  depende de la agrupación y la asignación de cada uno de los archivos.  En la organización de estos archivos hay varias reglas importantes como: acceso rápido para recuperar la información de este, fácil de actualizar el archivo, economía de almacenamiento, mantenimiento simple, confianza para asegurar los datos.
+
+Estas reglas se utilizan dependiendo de las tareas que va a usar el archivo; las estructuras utilizadas para estos manejos de archivos son diversas y puede implementarse como una combinación como: pilas, archivos secuenciales, archivos secuenciales indexados y archivos directos o de dispersión. La cual cada una de ellas definiremos más adelante.
+ - Nodo-i:
+Un archivo posee varios componentes: un nombre, contenido e información administración como permiso y fechas de modificación. La información administrativa esta almacenada en el “ nodo-i ”( en ingles muchas veces se usa inodo ( sin guión) en vez de i-nodo), junto con datos esenciales para el sistema tales como su longitud, la región del disco en la que se encuentra almacenado el contenido del archivo y otros elementos.
+ - Pila:
+Una pila (stack en inglés) es una lista ordenada o estructura de datos que permite almacenar y recuperar datos, el modo de acceso a sus elementos es de tipo LIFO (del inglés Last In, First Out, «último en entrar, primero en salir») . Esta estructura se aplica en multitud de supuestos en el área de informática debido a su simplicidad y capacidad de dar respuesta a numerosos procesos.
+ - Registro
+un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador, que permite guardar transitoriamente y acceder a valores muy usados, generalmente en operaciones matemáticas.
+ - •	Los registros de datos se usan para guardar números enteros. En algunas computadoras antiguas, existía un único registro donde se guardaba toda la información, llamado acumulador.
+ - •	Los registros de memoria se usan para guardar exclusivamente direcciones de memoria. Eran muy usados en la arquitectura Harvard, ya que muchas veces las direcciones tenían un tamaño de palabra distinto que los datos.
+ - •	Los registros de propósito general (en inglés GPRs o General Purpose Registers) pueden guardar tanto datos como direcciones. Son fundamentales en la arquitectura de von Neumann. La mayor parte de las computadoras modernas usa GPR.
+ - •	Los registros de coma flotante se usan para guardar datos en formato de coma flotante.
+ - •	Los registros constantes tienen valores creados por hardware de sólo lectura. Por ejemplo, en MIPS el registro cero siempre vale 0.
+ - •	Los registros de propósito específico guardan información específica del estado del sistema, como el puntero de pila o el registro de estado
+ - Ruta del nombre:
+Casi todos los sistemas de archivos permiten organizar la información en carpetas. Este método de organización es muy segura. Permite que los programas funcionen mejor y la información está más ordenada.
+Para indicar donde se encuentra un archivo, se usa una cadena de texto llamada “ruta”. Su aspecto cambia un poco de sistema a sistema: su estructura suele indicar las carpetas y subcarpetas que hay que recorrer para llegar al archivo, terminando con el nombre del mismo.
+
+Las rutas no nos sirven solamente a nosotros como usuarios, sino también al sistema operativo para saber donde se encuentran ciertos archivos que uno u otro programa puede necesitar para funcionar.
+
+ - Sistema de gestión de ficheros
+ - Gestión de archivos: es la administración de los archivos esto se realiza a través del sistema operativo permitiendo  que los usuarios tengan acceso directo con los archivos y tengan control de ellos, así como también se puede enviar y compartir archivos con otros usuarios, brindarles seguridad y protección a estos. De modo que le permite al usuario realizar ciertas operaciones con ellos, las cuales son:
+ - 1)      Puedes crear un archivo, identificándolo con un nombre y determinar el espacio de este.
+ - 2)      Abrir el archivo, aquí se realiza distintas operaciones como su ejecución, leerlo, escribir en el.
+ - 3)      Borrarlo de modo que puedes liberar el espacio que ocupa este archivo.
+ - 4)      Cerrar el archivo, finaliza la ejecución de este.
+ - 5)      Modificarlo permite hacer cambios al archivo como cambiar su nombre.
+
+ 
+
+
 
 
  
